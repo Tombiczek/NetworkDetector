@@ -15,6 +15,7 @@
 		40F00EBB2BCD20D700FEC76F /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F00EBA2BCD20D700FEC76F /* MainPage.swift */; };
 		40F00EBD2BCD210000FEC76F /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F00EBC2BCD210000FEC76F /* SettingsPage.swift */; };
 		40F00EC02BCD23E600FEC76F /* WiFiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F00EBF2BCD23E600FEC76F /* WiFiInfo.swift */; };
+		40F00EC22BCD351D00FEC76F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F00EC12BCD351D00FEC76F /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		40F00EBA2BCD20D700FEC76F /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		40F00EBC2BCD210000FEC76F /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		40F00EBF2BCD23E600FEC76F /* WiFiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiInfo.swift; sourceTree = "<group>"; };
+		40F00EC12BCD351D00FEC76F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				40F00EBF2BCD23E600FEC76F /* WiFiInfo.swift */,
+				40F00EC12BCD351D00FEC76F /* LocationManager.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				40F00EAA2BCD1DDE00FEC76F /* ContentView.swift in Sources */,
 				40F00EA82BCD1DDE00FEC76F /* NetworkDetectorApp.swift in Sources */,
+				40F00EC22BCD351D00FEC76F /* LocationManager.swift in Sources */,
 				40F00EC02BCD23E600FEC76F /* WiFiInfo.swift in Sources */,
 				40F00EBB2BCD20D700FEC76F /* MainPage.swift in Sources */,
 				40F00EBD2BCD210000FEC76F /* SettingsPage.swift in Sources */,
@@ -313,7 +317,6 @@
 				DEVELOPMENT_TEAM = USL566T5MX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -340,7 +343,6 @@
 				DEVELOPMENT_TEAM = USL566T5MX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

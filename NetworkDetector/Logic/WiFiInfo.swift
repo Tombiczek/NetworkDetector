@@ -8,29 +8,37 @@ class WiFiInfo: ObservableObject {
 
     func fetchWiFiDetails() {
         print("Fetching WiFi details...")
-        if let interface = CWWiFiClient.shared().interface() {
-            let currentSSID = interface.ssid() ?? "Not Connected"
-            let currentBSSID = interface.bssid() ?? "Not Connected"
-            let currentSecurity = self.securityDescription(interface.security())
-            
-            print("Current SSID: \(currentSSID)")
-            print("Current BSSID: \(currentBSSID)")
-            print("Current Security: \(currentSecurity)")
-
-            DispatchQueue.main.async {
-                self.ssid = currentSSID
-                self.bssid = currentBSSID
-                self.security = currentSecurity
-            }
-        } else {
+        guard let interface = CWWiFiClient.shared().interface(), interface.powerOn() else {
+            print("WiFi interface not available or powered off.")
             DispatchQueue.main.async {
                 self.ssid = "Wi-Fi Not Available"
                 self.bssid = "Wi-Fi Not Available"
                 self.security = "Wi-Fi Not Available"
             }
-            print("WiFi interface not available or cannot be accessed.")
+            return
+        }
+
+        if let currentSSID = interface.ssid() {
+            print("Current SSID: \(currentSSID)")
+        } else {
+            print("SSID is nil")
+        }
+
+        if let currentBSSID = interface.bssid() {
+            print("Current BSSID: \(currentBSSID)")
+        } else {
+            print("BSSID is nil")
+        }
+
+        let currentSecurity = self.securityDescription(interface.security())
+        DispatchQueue.main.async {
+            self.ssid = interface.ssid() ?? "Error"
+            self.bssid = interface.bssid() ?? "Error"
+            self.security = currentSecurity
+            print("SSID: \(self.ssid), BSSID: \(self.bssid), Security: \(self.security)")
         }
     }
+
 
 
     private func securityDescription(_ security: CWSecurity) -> String {
