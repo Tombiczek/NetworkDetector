@@ -11,6 +11,7 @@
 		40F00EAA2BCD1DDE00FEC76F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F00EA92BCD1DDE00FEC76F /* ContentView.swift */; };
 		40F00EAC2BCD1DDF00FEC76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F00EAB2BCD1DDF00FEC76F /* Assets.xcassets */; };
 		40F00EAF2BCD1DDF00FEC76F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F00EAE2BCD1DDF00FEC76F /* Preview Assets.xcassets */; };
+		40F00EB72BCD1E3D00FEC76F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 40F00EB62BCD1E3C00FEC76F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		40F00EAB2BCD1DDF00FEC76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F00EAE2BCD1DDF00FEC76F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		40F00EB02BCD1DDF00FEC76F /* NetworkDetector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkDetector.entitlements; sourceTree = "<group>"; };
+		40F00EB62BCD1E3C00FEC76F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		40F00EB82BCD1E5500FEC76F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +39,8 @@
 		40F00E9B2BCD1DDE00FEC76F = {
 			isa = PBXGroup;
 			children = (
+				40F00EB82BCD1E5500FEC76F /* README.md */,
+				40F00EB62BCD1E3C00FEC76F /* .gitignore */,
 				40F00EA62BCD1DDE00FEC76F /* NetworkDetector */,
 				40F00EA52BCD1DDE00FEC76F /* Products */,
 			);
@@ -128,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F00EAF2BCD1DDF00FEC76F /* Preview Assets.xcassets in Resources */,
+				40F00EB72BCD1E3D00FEC76F /* .gitignore in Resources */,
 				40F00EAC2BCD1DDF00FEC76F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
