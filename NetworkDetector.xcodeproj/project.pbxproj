@@ -12,6 +12,9 @@
 		40F00EAC2BCD1DDF00FEC76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F00EAB2BCD1DDF00FEC76F /* Assets.xcassets */; };
 		40F00EAF2BCD1DDF00FEC76F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F00EAE2BCD1DDF00FEC76F /* Preview Assets.xcassets */; };
 		40F00EB72BCD1E3D00FEC76F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 40F00EB62BCD1E3C00FEC76F /* .gitignore */; };
+		40F00EBB2BCD20D700FEC76F /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F00EBA2BCD20D700FEC76F /* MainPage.swift */; };
+		40F00EBD2BCD210000FEC76F /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F00EBC2BCD210000FEC76F /* SettingsPage.swift */; };
+		40F00EC02BCD23E600FEC76F /* WiFiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F00EBF2BCD23E600FEC76F /* WiFiInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		40F00EB02BCD1DDF00FEC76F /* NetworkDetector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkDetector.entitlements; sourceTree = "<group>"; };
 		40F00EB62BCD1E3C00FEC76F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		40F00EB82BCD1E5500FEC76F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		40F00EBA2BCD20D700FEC76F /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		40F00EBC2BCD210000FEC76F /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		40F00EBF2BCD23E600FEC76F /* WiFiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 		40F00EA62BCD1DDE00FEC76F /* NetworkDetector */ = {
 			isa = PBXGroup;
 			children = (
+				40F00EBE2BCD23CD00FEC76F /* Logic */,
+				40F00EB92BCD20BA00FEC76F /* Views */,
 				40F00EA72BCD1DDE00FEC76F /* NetworkDetectorApp.swift */,
 				40F00EA92BCD1DDE00FEC76F /* ContentView.swift */,
 				40F00EAB2BCD1DDF00FEC76F /* Assets.xcassets */,
@@ -72,6 +80,23 @@
 				40F00EAE2BCD1DDF00FEC76F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		40F00EB92BCD20BA00FEC76F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40F00EBA2BCD20D700FEC76F /* MainPage.swift */,
+				40F00EBC2BCD210000FEC76F /* SettingsPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		40F00EBE2BCD23CD00FEC76F /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				40F00EBF2BCD23E600FEC76F /* WiFiInfo.swift */,
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +172,9 @@
 			files = (
 				40F00EAA2BCD1DDE00FEC76F /* ContentView.swift in Sources */,
 				40F00EA82BCD1DDE00FEC76F /* NetworkDetectorApp.swift in Sources */,
+				40F00EC02BCD23E600FEC76F /* WiFiInfo.swift in Sources */,
+				40F00EBB2BCD20D700FEC76F /* MainPage.swift in Sources */,
+				40F00EBD2BCD210000FEC76F /* SettingsPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,10 +305,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NetworkDetector/NetworkDetector.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NetworkDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = USL566T5MX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -302,10 +332,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NetworkDetector/NetworkDetector.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NetworkDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = USL566T5MX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
